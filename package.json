@@ -17,7 +17,31 @@
         "command": "teerasej-openai-playground.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "viewsContainers": {
+
+      "activitybar": [
+        {
+          "id": "package-explorer",      
+          "title": "OpenAI",
+          "icon": "$(heart)"               
+        }
+      ]
+    },
+
+    "views": {
+      "package-explorer": [        
+        {
+          "id": "package-dependencies", 
+          "name": "Dependencies",
+          "type": "tree"
+        },
+        {
+          "id": "package-outline",
+          "name": "Outline"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
